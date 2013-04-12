@@ -1,15 +1,18 @@
-require "rspec/rails"
-require "support/app"
-require "support/welcome_controller"
+require 'rspec/rails'
+require 'support/app'
+require 'support/welcome_controller'
 
-class TargetsController < ActionController::Base
-  nav_tab :external, permanent: true
-  nav_tab :home
-  nav_tab :edit, only: %(new edit)
-  nav_tab :preview, only: :preview
-end
+require 'navbar'
 
 describe TargetsController do
+
+  context "tabs configuration" do
+
+  end
+
+  context "tabs rendering" do
+
+  end
 
 end
 
