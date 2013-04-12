@@ -4,7 +4,7 @@ module Navbar
 
     end
 
-    def navbar(name, options = {})
+    def nav_tab(name, options = {})
 
     end
   end

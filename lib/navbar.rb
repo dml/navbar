@@ -1,9 +1,5 @@
-require "navbar/version"
+require "navbar/builder"
 
-module Navbar
-  autoload :Builder, 'navbar/builder'
+ActiveSupport.on_load(:action_controller) do
+  extend Navbar::Builder
 end
-
- ActiveSupport.on_load(:action_controller) do
-   extend Navbar::Builder
- end

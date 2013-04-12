@@ -8,26 +8,33 @@ Add this line to your application's Gemfile:
 
     gem 'navbar'
 
-And then execute:
-
-    $ bundle
-
 Or install it yourself as:
 
     $ gem install navbar
 
 ## Usage
 
-TODO: Write usage instructions here
+In rails view
 
-## Contributing
+    = navbar class: "navbar" do |tab|
+      = tab.first "First", first_path
+      = tab.second "Second", second_path
+      = tab.third "Third", third_path
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
-=======
-navbar
-======
+In rails controller
+
+    class ItemsController < ApplicationController
+      nav_tab :first, class: "bold"
+      nav_tab :second, active: true
+
+      ...
+    end
+
+Will render
+
+    <ul class="navbar">
+      <li class="bold"><a href="/first">First</a></li>
+      <li class="active"><a href="/second">Second</a></li>
+      <li><a href="/third">Third</a></li>
+    </ul>
 
