@@ -3,7 +3,7 @@
 Rails Navigation Bar Renderer
 
 [![Gem Version](https://badge.fury.io/rb/navbar.png)](http://badge.fury.io/rb/navbar)
-[![Build Status](https://travis-ci.org/dml/navbar.png?branch=master)](https://travis-ci.org/dml/navar)
+[![Build Status](https://travis-ci.org/dml/navbar.png?branch=master)](https://travis-ci.org/dml/navbar)
 
 
 ## Installation
