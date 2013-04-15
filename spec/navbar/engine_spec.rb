@@ -1,11 +1,11 @@
-require "navbar/builder"
+require "navbar/engine"
 require "action_controller"
 
 class TargetsController < ActionController::Base
-  extend Navbar::Builder
+  extend Navbar::Engine::ClassMethods
 end
 
-describe Navbar::Builder do
+describe Navbar::Engine::ClassMethods do
 
   describe ".navbar" do
 
